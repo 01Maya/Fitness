@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Create Next App",
+  title: "Fitness™-Transform Your Body and Mind",
   description: "Sleek responsive Fitness™ landing page with modern design.",
 };
 
