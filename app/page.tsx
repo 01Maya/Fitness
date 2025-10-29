@@ -253,7 +253,7 @@ export default function Home() {
   <h3 className="mb-4 text-2xl font-semibold">Personalized Coaching</h3>
   <p className="mb-6">
     Our expert trainers offer tailored fitness plans designed to meet your specific goals and needs. With one-on-one
-    guidance, we help you stay motivated and on track throughout your fitness journey. Whether you're looking to lose
+    guidance, we help you stay motivated and on track throughout your fitness journey. Whether you are looking to lose
     weight, build strength, or improve overall wellness, we are here to support you every step of the way. Achieve
     lasting results with personalized coaching that adapts to your progress.
   </p>

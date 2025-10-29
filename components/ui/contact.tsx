@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Toaster, toast } from "sonner"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Toaster, toast } from "sonner";
 
 // 🔥 Animation variants
 const staggerChildren = {
@@ -15,35 +15,35 @@ const staggerChildren = {
     y: 0,
     transition: { duration: 0.5, staggerChildren: 0.15 },
   },
-}
+};
 
 export default function ContactSection() {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    const form = e.currentTarget
-    const formData = new FormData(form)
+    e.preventDefault();
+    const form = e.currentTarget;
+    const formData = new FormData(form);
 
-    setLoading(true)
+    setLoading(true);
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         body: formData,
-      })
+      });
 
-      const data = await response.json()
-      setLoading(false)
+      const data = await response.json();
+      setLoading(false);
 
       if (response.ok) {
-        toast.success("✅ Message Sent! We’ll get back to you soon.")
-        form.reset()
+        toast.success("✅ Message Sent! We’ll get back to you soon.");
+        form.reset();
       } else {
-        toast.error(data.message || "❌ Something went wrong.")
+        toast.error(data.message || "❌ Something went wrong.");
       }
-    } catch (error) {
-      setLoading(false)
-      toast.error("⚠️ Network error. Please try again.")
+    } catch {
+      setLoading(false);
+      toast.error("⚠️ Network error. Please try again.");
     }
   }
 
@@ -106,5 +106,5 @@ export default function ContactSection() {
       {/* 🔔 Toaster */}
       <Toaster position="top-right" richColors />
     </>
-  )
+  );
 }
