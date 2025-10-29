@@ -7,11 +7,12 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Dumbbell, SpaceIcon as Yoga, Waves, Menu, X, Star, Heart, Trophy, Target } from "lucide-react"
+import { Dumbbell, SpaceIcon as Yoga, Waves, Menu, X, Star, Heart, Trophy, Target, Component } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { fadeInVariants, staggerChildren } from "@/utils/animations"
 import { useSmoothScroll } from "@/hooks/useSmoothScroll"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import ContactSection from "@/components/ui/contact"
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -436,25 +437,8 @@ export default function Home() {
           </div>
         </motion.section>
         {/* Contact Section */}
-        <motion.section
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={staggerChildren}
-          className="px-4 py-12 lg:px-8"
-        >
-          <h2 className="mb-8 text-center text-3xl font-bold text-green-950">Get in touch</h2>
-          <div className="mx-auto max-w-md">
-            <form className="space-y-4">
-              <Input placeholder="Your name" className="border-green-200" />
-              <Input type="email" placeholder="Your email" className="border-green-200" />
-              <Textarea placeholder="Message" className="border-green-200" />
-              <Button className="w-full bg-green-950 text-white hover:bg-green-900 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                Send Message
-              </Button>
-            </form>
-          </div>
-        </motion.section>
+<ContactSection/>
+       
         {/* FAQ Section */}
         <motion.section
           id="faq"
