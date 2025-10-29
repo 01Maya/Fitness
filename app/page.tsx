@@ -296,31 +296,31 @@ export default function Home() {
               {
                 name: "Jane Smith",
                 role: "Fitness Enthusiast",
-                text: "Amazing experience with the trainers. Highly recommended!",
+                text: "\"Amazing experience with the trainers. Highly recommended!\"",
                 icon: Star,
               },
               {
                 name: "John Doe",
                 role: "Weight Loss Champion",
-                text: "Lost 30 pounds in 3 months. The support here is unmatched!",
+                text: "\"Lost 30 pounds in 3 months. The support here is unmatched!\"",
                 icon: Dumbbell,
               },
               {
                 name: "Emily Johnson",
                 role: "Yoga Practitioner",
-                text: "The yoga classes have transformed my flexibility and peace of mind.",
+                text: "\"The yoga classes have transformed my flexibility and peace of mind.\"",
                 icon: Heart,
               },
               {
                 name: "Michael Brown",
                 role: "Bodybuilding Competitor",
-                text: "Excellent equipment and knowledgeable staff. Perfect for serious lifters.",
+                text: "\"Excellent equipment and knowledgeable staff. Perfect for serious lifters.\"",
                 icon: Trophy,
               },
               {
                 name: "Sarah Lee",
                 role: "Busy Professional",
-                text: "The 24/7 access fits perfectly with my hectic schedule. Love it!",
+                text: "\"The 24/7 access fits perfectly with my hectic schedule. Love it!\"",
                 icon: Target,
               },
             ].map((review, i) => (
@@ -338,7 +338,7 @@ export default function Home() {
                     <p className="text-xs text-gray-600">{review.role}</p>
                   </div>
                 </div>
-                <p className="text-sm text-gray-600">"{review.text}"</p>
+                <p className="text-sm text-gray-600">{review.text}</p>
               </motion.div>
             ))}
           </div>
