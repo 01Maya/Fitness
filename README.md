@@ -54,8 +54,10 @@ This elegantly designed and fully responsive landing page for Fitness™ deliver
 
 This landing page stands out for its responsive design, hover animations, and minimal yet effective visual hierarchy, making it ideal for any modern fitness or wellness brand.
 
+---
 
-
+## Preview
+https://fitness-o1.vercel.app/
 
 
 ## Screenshot
