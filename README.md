@@ -29,6 +29,9 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+
+---
+
 ## Website Description for Fitness™ Landing Page
 
 This elegantly designed and fully responsive landing page for Fitness™ delivers a sleek and modern wellness experience tailored for body and mind transformation. With a calming green-white theme and immersive imagery, the site effectively captures attention while maintaining visual harmony and readability.
@@ -59,9 +62,11 @@ This landing page stands out for its responsive design, hover animations, and mi
 ## Preview
 https://fitness-o1.vercel.app/
 
+---
 
 ## Screenshot
 ![Image](https://github.com/user-attachments/assets/96021084-d31d-4312-9245-f89f68506df9)
+---
 
 ## Deploy on Vercel
 
