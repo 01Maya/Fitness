@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Fitness™-Transform Your Body and Mind",
+  title: "Fitness™-Transform Your Body and Mind🌱",
   description: "Sleek responsive Fitness™ landing page with modern design.",
 };
 
